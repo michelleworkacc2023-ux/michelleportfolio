@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Michelle Fan — Senior Executive, WPP Media</title>
+<title>Michelle Fan — Integrated Campaign & Regional Marketing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
@@ -20,44 +20,46 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  h1,h2,h3,h4{font-family:'Sora',sans-serif;letter-spacing:-.02em;line-height:1.1}
+  h1,h2,h3,h4{font-family:'Sora',sans-serif;letter-spacing:-.02em;line-height:1.15}
   .grad-text{background:linear-gradient(100deg,var(--grad1),var(--grad2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
   section{position:relative;scroll-margin-top:70px}
+
   .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;z-index:0;pointer-events:none}
   .blob-a{width:420px;height:420px;background:radial-gradient(circle,#C9B4FF,transparent 68%);top:-120px;right:-80px}
   .blob-b{width:380px;height:380px;background:radial-gradient(circle,#FFC7F0,transparent 68%);top:520px;left:-140px}
 
-  nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+  nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
   .logo{display:flex;align-items:center;gap:12px;font-family:'Sora';font-weight:700;font-size:1.05rem}
   .logo-badge{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#fff;font-family:'Sora';font-weight:700;font-size:.95rem;box-shadow:0 6px 16px rgba(139,61,255,.35)}
-  .nav-links{display:flex;align-items:center;gap:6px}
-  .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:.9rem;font-weight:500;padding:9px 14px;border-radius:10px;transition:.2s}
+  .nav-links{display:flex;align-items:center;gap:4px}
+  .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:.88rem;font-weight:500;padding:9px 12px;border-radius:10px;transition:.2s}
   .nav-links a:hover{color:var(--ink);background:var(--bg-soft)}
-  .btn-grad{background:linear-gradient(100deg,var(--grad1),var(--grad2));color:#fff!important;font-weight:600;padding:11px 22px!important;border-radius:999px;border:none;cursor:pointer;font-size:.9rem;box-shadow:0 8px 22px rgba(139,61,255,.32);transition:.25s;display:inline-block;text-decoration:none}
-  .btn-grad:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(139,61,255,.42)}
+  .nav-links a.hot{color:var(--grad1);font-weight:600}
   .nav-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
   .nav-toggle span{width:24px;height:2px;background:var(--ink);border-radius:2px}
 
-  .hero{padding:76px 0 30px;position:relative;overflow:hidden}
-  .hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:48px;align-items:center;position:relative;z-index:2}
-  .eyebrow{display:inline-flex;align-items:center;gap:9px;background:var(--bg-soft);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.82rem;font-weight:500;color:var(--ink-soft);margin-bottom:24px}
-  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--grad1),var(--grad2));box-shadow:0 0 0 4px rgba(139,61,255,.15)}
-  .hero h1{font-size:clamp(2.4rem,5vw,3.7rem);font-weight:800;margin-bottom:8px}
-  .hero .cn{font-size:clamp(1.3rem,2.8vw,1.85rem);color:var(--ink-faint);font-weight:600;margin-bottom:20px}
-  .hero p.lead{font-size:1.02rem;color:var(--ink-soft);max-width:500px;margin-bottom:28px}
-  .hero p.lead b{color:var(--ink);font-weight:600}
-  .hero-cta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:28px}
-  .btn-ghost{padding:11px 22px;border-radius:999px;border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:.9rem;text-decoration:none;background:#fff;transition:.2s}
+  .btn-grad{background:linear-gradient(100deg,var(--grad1),var(--grad2));color:#fff!important;font-weight:600;padding:11px 22px;border-radius:999px;border:none;cursor:pointer;font-size:.9rem;box-shadow:0 8px 22px rgba(139,61,255,.32);transition:.25s;display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+  .btn-grad:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(139,61,255,.42)}
+  .btn-ghost{padding:11px 22px;border-radius:999px;border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:.9rem;text-decoration:none;background:#fff;transition:.2s;display:inline-flex;align-items:center;gap:8px}
   .btn-ghost:hover{border-color:var(--grad1);color:var(--grad1)}
+
+  .hero{padding:70px 0 30px;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:.96fr 1.04fr;gap:48px;align-items:center;position:relative;z-index:2}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;background:var(--bg-soft);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.82rem;font-weight:500;color:var(--ink-soft);margin-bottom:22px}
+  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--grad1),var(--grad2));box-shadow:0 0 0 4px rgba(139,61,255,.15)}
+  .hero h1{font-size:clamp(2.3rem,4.6vw,3.5rem);font-weight:800;margin-bottom:8px}
+  .hero .cn{font-size:clamp(1.2rem,2.6vw,1.7rem);color:var(--ink-faint);font-weight:600;margin-bottom:18px}
+  .hero p.lead{font-size:1.04rem;color:var(--ink-soft);max-width:520px;margin-bottom:26px}
+  .hero p.lead b{color:var(--ink);font-weight:600}
+  .hero-cta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:26px}
   .contact-line{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.86rem;color:var(--ink-faint)}
   .contact-line b{color:var(--ink-soft);font-weight:600}
 
   .hero-right{display:grid;grid-template-columns:1fr 1.12fr;gap:18px;align-items:stretch}
   .portrait{position:relative;border-radius:20px;box-shadow:var(--shadow-md);border:1px solid var(--line);overflow:hidden;background:linear-gradient(160deg,#F3EEFF,#FFF0FA);min-height:430px}
   .portrait img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block}
-
   .caps{display:grid;grid-template-rows:repeat(4,1fr);gap:11px}
   .cap{background:var(--bg-panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow-sm);transition:.25s;display:flex;gap:12px;align-items:center}
   .cap:hover{transform:translateX(3px);box-shadow:var(--shadow-md);border-color:#D8C7FF}
@@ -66,25 +68,46 @@
   .cap h4{font-size:.87rem;font-weight:700;margin-bottom:2px;line-height:1.3}
   .cap p{font-size:.75rem;color:var(--ink-soft);line-height:1.45}
 
-  .sec{padding:92px 0}
-  .sec-head{max-width:680px;margin-bottom:48px}
-  .sec-tag{font-family:'Sora';font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grad1);margin-bottom:14px;display:block}
-  .sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700}
+  .sec{padding:88px 0}
+  .sec-head{max-width:680px;margin-bottom:44px}
+  .sec-tag{font-family:'Sora';font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grad1);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .sec-tag .pill{background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#fff;padding:3px 10px;border-radius:999px;font-size:.68rem;letter-spacing:.1em}
+  .sec-head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);font-weight:700}
   .sec-head p{color:var(--ink-soft);margin-top:14px;font-size:1.02rem}
 
-  /* STAR CASES */
+  /* ROG teaser */
+  .rog{background:linear-gradient(145deg,#141019,#1E1526 60%,#2A1730);border-radius:26px;padding:52px 48px;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(20,10,30,.4)}
+  .rog::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(232,77,206,.28),transparent 68%);top:-120px;right:-60px}
+  .rog::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(139,61,255,.3),transparent 68%);bottom:-120px;left:-40px}
+  .rog-tag{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#EAD9FF;padding:7px 15px;border-radius:999px;font-size:.76rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px;position:relative}
+  .rog h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:800;margin-bottom:16px;position:relative;max-width:720px}
+  .rog h2 span{background:linear-gradient(100deg,#C9A9FF,#F49BE0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .rog p{color:#C4B8D4;font-size:1.05rem;max-width:640px;margin-bottom:12px;position:relative;line-height:1.6}
+  .rog .ph-note{color:#8B7CA0;font-size:.88rem;font-style:italic;margin-bottom:28px;position:relative}
+  .rog-pills{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px;position:relative}
+  .rog-pills span{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#DAC9F0;padding:7px 14px;border-radius:999px;font-size:.8rem;font-weight:500}
+  .rog-cta{display:flex;gap:12px;flex-wrap:wrap;position:relative}
+  .btn-rog{background:linear-gradient(100deg,#8B3DFF,#E84DCE);color:#fff;font-weight:600;padding:12px 24px;border-radius:999px;text-decoration:none;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 10px 26px rgba(139,61,255,.4);transition:.25s}
+  .btn-rog:hover{transform:translateY(-2px)}
+  .btn-rog-ghost{border:1px solid rgba(255,255,255,.3);color:#fff;font-weight:600;padding:12px 24px;border-radius:999px;text-decoration:none;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;transition:.25s}
+  .btn-rog-ghost:hover{background:rgba(255,255,255,.1)}
+
+  /* STAR cases */
   .case{background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);margin-bottom:34px;overflow:hidden;transition:.3s}
   .case:hover{box-shadow:var(--shadow-md)}
   .case-hd{padding:30px 34px 0;display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
   .case-num{width:46px;height:46px;flex-shrink:0;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#fff;font-family:'Sora';font-weight:700;font-size:.95rem;box-shadow:0 8px 18px rgba(139,61,255,.3)}
   .case-hd h3{font-size:1.32rem;font-weight:700;line-height:1.25}
   .case-hd .sub{font-size:.84rem;color:var(--ink-faint);font-style:italic;margin-top:4px}
+  .case-q{margin:18px 34px 0;padding:14px 18px;background:linear-gradient(135deg,#F7F3FF,#FFF4FC);border:1px solid #E9DEFF;border-radius:12px;font-size:.92rem;color:var(--ink-soft)}
+  .case-q b{color:var(--grad1);font-weight:600}
   .tags{display:flex;flex-wrap:wrap;gap:7px;padding:16px 34px 0}
   .tag{font-size:.73rem;background:var(--bg-soft);border:1px solid var(--line);color:var(--ink-soft);padding:5px 11px;border-radius:999px;font-weight:500}
 
-  .star{padding:24px 34px 0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 30px}
+  .star{padding:22px 34px 0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 30px}
   .star-row{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
   .star-row.no-top{border-top:none;padding-top:6px}
+  .star-full{grid-column:1 / -1}
   .star-k{flex-shrink:0;width:30px;height:30px;border-radius:9px;background:#F3EEFF;color:var(--grad1);display:grid;place-items:center;font-family:'Sora';font-weight:700;font-size:.8rem}
   .star-b .lbl{font-family:'Sora';font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grad1);font-weight:600;margin-bottom:3px}
   .star-b p{font-size:.92rem;color:var(--ink-soft);line-height:1.6}
@@ -96,13 +119,6 @@
   .star-b ul.res li{position:relative;padding-left:20px;font-size:.92rem;color:var(--ink-soft);line-height:1.55}
   .star-b ul.res li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--grad1),var(--grad2))}
   .star-b ul.res li b{color:var(--ink);font-weight:600}
-  .res-lead{background:linear-gradient(135deg,#F7F3FF,#FFF4FC);border:1px solid #E9DEFF;border-radius:14px;padding:16px 18px;margin-bottom:12px}
-  .rl-nums{display:flex;gap:34px;flex-wrap:wrap}
-  .rl-n{display:flex;flex-direction:column}
-  .rl-n .v{font-family:'Sora';font-weight:800;font-size:1.75rem;line-height:1;background:linear-gradient(100deg,var(--grad1),var(--grad2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .rl-n .v i{font-style:normal;font-size:.92rem;font-weight:700;margin-left:2px}
-  .rl-n .l{font-size:.78rem;color:var(--ink-soft);margin-top:5px;font-weight:500}
-  .rl-src{font-size:.71rem;color:var(--ink-faint);margin-top:11px;padding-top:9px;border-top:1px dashed #E4D8FF;letter-spacing:.04em}
   .act-grp{margin-bottom:12px}
   .act-grp:last-child{margin-bottom:0}
   .act-h{font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:5px}
@@ -110,21 +126,25 @@
   ul.act-l li{position:relative;padding-left:18px;font-size:.9rem;color:var(--ink-soft);line-height:1.55;margin-bottom:5px}
   ul.act-l li::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:50%;background:#D8C7FF}
   ul.act-l li b{color:var(--ink);font-weight:600}
-  .gal.gal-1{grid-template-columns:1fr}
-  .gal.gal-1 figure{aspect-ratio:16/8;max-width:660px}
-  .gal.gal-c2{grid-template-columns:1.35fr 1.35fr .75fr;align-items:stretch}
-  .gal.gal-c2 figure{aspect-ratio:auto;height:300px}
-  .star-full{grid-column:1 / -1}
-
-  .ph-res{border:1.5px dashed #D4C4FF;border-radius:12px;background:linear-gradient(160deg,#FBF8FF,#FFF7FD);padding:16px;color:var(--ink-faint);font-size:.82rem;margin-top:4px}
-  .ph-res b{color:var(--grad1);font-family:'Sora';font-weight:600;font-size:.84rem;display:block;margin-bottom:3px}
+  .res-lead{background:linear-gradient(135deg,#F7F3FF,#FFF4FC);border:1px solid #E9DEFF;border-radius:14px;padding:16px 18px;margin-bottom:12px}
+  .rl-nums{display:flex;gap:34px;flex-wrap:wrap}
+  .rl-n{display:flex;flex-direction:column}
+  .rl-n .v{font-family:'Sora';font-weight:800;font-size:1.75rem;line-height:1;background:linear-gradient(100deg,var(--grad1),var(--grad2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .rl-n .v i{font-style:normal;font-size:.92rem;font-weight:700;margin-left:2px}
+  .rl-n .l{font-size:.78rem;color:var(--ink-soft);margin-top:5px;font-weight:500}
+  .rl-src{font-size:.71rem;color:var(--ink-faint);margin-top:11px;padding-top:9px;border-top:1px dashed #E4D8FF;letter-spacing:.04em}
 
   .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:22px 34px 34px}
   .gal figure{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff;position:relative;aspect-ratio:4/3}
   .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
   .gal figure:hover img{transform:scale(1.06)}
   .gal figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(10,12,26,.85));color:#fff;font-size:.72rem;font-weight:500;padding:20px 12px 9px}
+  .gal.gal-c2 figure{aspect-ratio:auto;height:300px}
+  .gal.gal-c2{grid-template-columns:1.35fr 1.35fr .75fr}
+  .role-note{margin:0 34px 30px;padding:14px 18px;background:var(--bg-soft);border-radius:12px;font-size:.86rem;color:var(--ink-soft)}
+  .role-note b{color:var(--ink);font-weight:600}
 
+  /* Awards */
   .aw-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:26px;align-items:start}
   .aw-cards{display:flex;flex-direction:column;gap:14px}
   .aw{background:var(--bg-panel);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow-sm);display:flex;gap:16px;align-items:center;transition:.25s}
@@ -141,13 +161,38 @@
   .gal.gal-aw{grid-template-columns:1fr 1fr;padding:26px 0 0}
   .gal.gal-aw figure{aspect-ratio:3/2}
 
+  /* Community */
+  .comm-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:start}
+  .comm-card{background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm)}
+  .comm-card h3{font-size:1.2rem;font-weight:700;margin-bottom:6px}
+  .comm-card .obj{font-size:.86rem;color:var(--ink-faint);font-style:italic;margin-bottom:18px}
+  .comm-card ul{list-style:none;padding:0;margin:0}
+  .comm-card ul li{position:relative;padding-left:20px;font-size:.92rem;color:var(--ink-soft);line-height:1.6;margin-bottom:8px}
+  .comm-card ul li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,var(--grad1),var(--grad2))}
+  .comm-stats{display:flex;flex-direction:column;gap:14px}
+  .comm-stat{background:linear-gradient(150deg,#F7F3FF,#FFF4FC);border:1px solid #E9DEFF;border-radius:16px;padding:22px}
+  .comm-stat .v{font-family:'Sora';font-weight:800;font-size:1.9rem;background:linear-gradient(100deg,var(--grad1),var(--grad2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+  .comm-stat .l{font-size:.82rem;color:var(--ink-soft);margin-top:6px}
+
+  /* Experience */
+  .exp-list{display:flex;flex-direction:column;gap:16px}
+  .exp{background:var(--bg-panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px;box-shadow:var(--shadow-sm);display:grid;grid-template-columns:180px 1fr;gap:24px}
+  .exp .when{font-family:'Sora';font-weight:600;font-size:.82rem;color:var(--grad1)}
+  .exp .when .org{display:block;color:var(--ink);font-size:.98rem;margin-top:4px}
+  .exp .when .role{display:block;color:var(--ink-soft);font-size:.82rem;font-weight:500;margin-top:2px}
+  .exp-b ul{list-style:none;padding:0;margin:0}
+  .exp-b ul li{position:relative;padding-left:18px;font-size:.9rem;color:var(--ink-soft);line-height:1.55;margin-bottom:6px}
+  .exp-b ul li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#D8C7FF}
+  .exp-b ul li b{color:var(--ink);font-weight:600}
+
+  /* Skills */
   .skills-wrap{display:flex;flex-direction:column;gap:26px;max-width:900px}
   .sk-grp{display:grid;grid-template-columns:180px 1fr;gap:20px;align-items:start}
   .sk-lbl{font-family:'Sora';font-weight:700;font-size:1.02rem;color:var(--ink);padding-top:9px}
   .sk-tags{display:flex;flex-wrap:wrap;gap:10px}
-  .sec-last{padding-bottom:110px}
-  @media (max-width:640px){.sk-grp{grid-template-columns:1fr;gap:10px}.sk-lbl{padding-top:0}}  .skill{background:var(--bg-panel);border:1px solid var(--line);border-radius:999px;padding:12px 22px;font-weight:500;font-size:.92rem;color:var(--ink-soft);box-shadow:var(--shadow-sm);transition:.25s}
+  .skill{background:var(--bg-panel);border:1px solid var(--line);border-radius:999px;padding:12px 22px;font-weight:500;font-size:.92rem;color:var(--ink-soft);box-shadow:var(--shadow-sm);transition:.25s}
   .skill:hover{transform:translateY(-3px);color:#fff;border-color:transparent;background:linear-gradient(100deg,var(--grad1),var(--grad2));box-shadow:0 12px 24px rgba(139,61,255,.3)}
+  .sec-last{padding-bottom:110px}
 
   .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:start}
   .about-card{background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow-sm)}
@@ -160,32 +205,18 @@
   .info-item .v{font-family:'Sora';font-weight:600;font-size:1.05rem;margin-top:6px}
   .info-item .s{font-size:.88rem;color:var(--ink-soft);margin-top:3px}
 
-  .contact{padding:60px 0 96px}
-  .contact-card{background:linear-gradient(130deg,#7A2FFF,#B23DE8 55%,#E84DCE);border-radius:32px;padding:64px 48px;text-align:center;color:#fff;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(139,61,255,.32)}
-  .contact-card::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.12);top:-120px;right:-60px}
-  .contact-card::before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.1);bottom:-100px;left:-40px}
-  .contact-card h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin-bottom:14px;position:relative}
-  .contact-card p{opacity:.92;max-width:480px;margin:0 auto 30px;position:relative}
-  .contact-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
-  .btn-white{background:#fff;color:#7A2FFF;padding:13px 28px;border-radius:999px;font-weight:600;text-decoration:none;transition:.25s}
-  .btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.18)}
-  .btn-outline-w{border:1px solid rgba(255,255,255,.6);color:#fff;padding:13px 28px;border-radius:999px;font-weight:600;text-decoration:none;transition:.25s}
-  .btn-outline-w:hover{background:rgba(255,255,255,.14)}
   footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--ink-faint);font-size:.85rem}
-
   .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
 
   @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr;gap:34px}
     .hero-right{grid-template-columns:.9fr 1fr}
-    .about-grid{grid-template-columns:1fr}
+    .about-grid,.aw-grid,.comm-grid{grid-template-columns:1fr}
     .star{grid-template-columns:1fr;gap:0}
-    .star-row:nth-child(2){border-top:1px solid var(--line);padding-top:16px}
-    .star-b ul.res{grid-template-columns:1fr}
-    .aw-grid{grid-template-columns:1fr}
-    .gal.gal-c2{grid-template-columns:1fr 1fr}
-    .gal.gal-c2 .c2-social{display:none}
+    .star-row.no-top + .star-row{border-top:1px solid var(--line);padding-top:16px}
+    .exp{grid-template-columns:1fr;gap:10px}
+    .rog{padding:38px 28px}
     .nav-links{position:fixed;inset:70px 0 auto 0;background:rgba(255,255,255,.98);backdrop-filter:blur(16px);flex-direction:column;padding:18px;gap:4px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.35s;box-shadow:var(--shadow-md)}
     .nav-links.open{transform:none}
     .nav-links a{width:100%;padding:13px 16px}
@@ -196,8 +227,8 @@
     .portrait{max-width:260px;margin:0 auto;aspect-ratio:3/4;min-height:0}
     .gal,.gal.gal-c2{grid-template-columns:1fr;gap:10px}
     .gal.gal-c2 figure{height:auto;aspect-ratio:16/10}
-    .gal.gal-c2 .c2-social{display:block;aspect-ratio:3/4;max-width:260px}
-    .case-hd,.tags,.star,.gal{padding-left:22px;padding-right:22px}
+    .sk-grp{grid-template-columns:1fr;gap:10px}.sk-lbl{padding-top:0}
+    .case-hd,.tags,.star,.gal,.case-q,.role-note{padding-left:22px;padding-right:22px}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
@@ -209,10 +240,12 @@
     <div class="logo"><span class="logo-badge">MF</span>Michelle Fan</div>
     <div class="nav-links" id="navlinks">
       <a href="#home">Home</a>
-      <a href="#work">Work</a>
-      <a href="#awards">Awards</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#rog" class="hot">ROG Case</a>
+      <a href="#work">Work</a>
+      <a href="#community">Community</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Capabilities</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -224,13 +257,13 @@
   <div class="wrap">
     <div class="hero-grid">
       <div class="reveal">
-        <span class="eyebrow"><span class="dot"></span>Senior Executive · WPP Media</span>
+        <span class="eyebrow"><span class="dot"></span>Integrated Campaign &amp; Regional Marketing</span>
         <h1>Hello, I'm <span class="grad-text">Michelle Fan</span></h1>
         <div class="cn">范玫宣</div>
-        <p class="lead"><b>Project Management</b> · <b>Problem-solving</b> · <b>Media Planning</b> · <b>Communication and Collaboration</b></p>
+        <p class="lead">I plan <b>integrated brand campaigns</b> — starting from business objectives, grounded in consumer insight, and measured on brand impact. Currently at WPP Media on Uber Mobility Taiwan.</p>
         <div class="hero-cta">
-          <a href="#work" class="btn-grad">My Achievements</a>
-          <a href="#awards" class="btn-ghost">Award Winning Campaigns</a>
+          <a href="#rog" class="btn-grad">See the ROG campaign case →</a>
+          <a href="resume.pdf" class="btn-ghost">Download résumé (PDF)</a>
         </div>
         <div class="contact-line">
           <span><b>📱</b> (+886) 913957186</span>
@@ -238,27 +271,64 @@
         </div>
       </div>
       <div class="hero-right">
-        <div class="portrait reveal">
-          <img src="01-portrait.jpg" alt="Michelle Fan" width="700" height="900" fetchpriority="high">
-        </div>
+        <div class="portrait reveal"><img src="01-portrait.jpg" alt="Michelle Fan" width="700" height="900" fetchpriority="high"></div>
         <div class="caps">
         <div class="cap reveal">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
-          <h4>Campaign execution</h4><p>Leading Uber Mobility campaign delivery; optimizing and streamlining workflows, standardizing SOPs</p>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20v-6M6 20v-4M18 20v-8"/><circle cx="12" cy="6" r="2"/><circle cx="6" cy="10" r="2"/><circle cx="18" cy="4" r="2"/></svg></div>
+          <div><h4>Integrated campaign strategy</h4><p>From business objective to activation across paid, owned &amp; earned</p></div>
         </div>
         <div class="cap reveal">
-          <div class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-          <h4>Integrated planning</h4><p>Providing media solutions across digital and offline media</p>
+          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 2"/></svg></div>
+          <div><h4>Consumer &amp; brand insight</h4><p>Audience segmentation and brand-lift measurement</p></div>
         </div>
         <div class="cap reveal">
-          <div class="ic"><svg viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></div>
-          <h4>Problem-solving</h4><p>Resolving executional issues and campaign delivery bottlenecks</p>
+          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg></div>
+          <div><h4>Regional collaboration</h4><p>Aligning APAC teams across Australia, Hong Kong &amp; India</p></div>
         </div>
         <div class="cap reveal">
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <h4>Communication</h4><p>Working closely with both the internal team and the regional APAC team</p>
+          <div><h4>Stakeholder &amp; project management</h4><p>Coordinating clients, creative, and media partners</p></div>
         </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">About</span>
+      <h2>I move brands from objective to activation — not just media to market.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <p>I'm a <strong>Senior Executive at WPP Media</strong>, working almost entirely on Uber Mobility Taiwan since July 2024. My focus is upper-funnel: <strong>awareness and consideration</strong>, built through integrated planning across digital and offline touchpoints.</p>
+        <p>I start from the business and brand objective, define the audience, and translate consumer insight into campaign strategy — then coordinate paid, owned, earned, and event touchpoints to deliver it. I measure success on <strong>brand lift and consideration</strong>, not media delivery alone.</p>
+        <p>Day to day I work across <strong>APAC teams in Australia, Hong Kong, and India</strong>, run client reviews, and manage creative, media, and external partners. I was promoted from intern to Senior Executive within six months, and I build the SOPs that help new team members get up to speed.</p>
+      </div>
+      <div class="info-list">
+        <div class="info-item reveal"><div class="k">Now</div><div class="v">Senior Executive</div><div class="s">WPP Media · Uber Mobility Taiwan</div></div>
+        <div class="info-item reveal"><div class="k">Focus</div><div class="v">Awareness &amp; Consideration</div><div class="s">Integrated campaign planning · brand measurement</div></div>
+        <div class="info-item reveal"><div class="k">Education</div><div class="v">Fu Jen Catholic University</div><div class="s">B.A. English · Minor in Advertising &amp; Communication · TOEIC 985</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="rog">
+  <div class="wrap">
+    <div class="rog reveal">
+      <span class="rog-tag">◆ Portfolio Exercise · Primary Case</span>
+      <h2>A global campaign concept for <span>ROG gaming</span></h2>
+      <p>A speculative, outside-in campaign built to show how I'd approach ROG's brand and audience — from objective and insight through to a global-to-regional activation plan.</p>
+      <p class="ph-note">Full case in progress — summary and strategy detail coming here. The complete write-up will be available as a downloadable PDF.</p>
+      <div class="rog-pills">
+        <span>Campaign strategy</span><span>Audience &amp; insight</span><span>Global-to-regional GTM</span><span>Brand consideration</span><span>Activation</span>
+      </div>
+      <div class="rog-cta">
+        <a href="rog-case.pdf" class="btn-rog">Read the full case (PDF) →</a>
+        <a href="#work" class="btn-rog-ghost">See real campaign work</a>
       </div>
     </div>
   </div>
@@ -267,162 +337,159 @@
 <section class="sec" id="work" style="background:var(--bg-soft)">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="sec-tag">Selected Work</span>
-      <h2>Case studies</h2>
-      <p>Each case is framed as Situation, Task, Action, and Result.</p>
+      <span class="sec-tag">Selected Work · Uber Mobility Taiwan</span>
+      <h2>Brand campaigns, measured on consideration</h2>
+      <p>Two campaigns where the job was to shift behaviour and lift brand consideration — not just deliver media.</p>
     </div>
-    
+
     <article class="case reveal">
-      <div class="case-hd">
-        <span class="case-num">01</span>
-        <div><h3>Skip the Drama: Taxi is on Uber</h3><div class="sub">Integrated OOH &amp; digital planning · Occasion &amp; location targeting</div></div>
+      <div class="case-hd"><span class="case-num">01</span>
+        <div><h3>Consumer Behaviour &amp; Brand Consideration</h3><div class="sub">Skip the Drama: Taxi is on Uber · integrated OOH + digital</div></div>
       </div>
-      <div class="tags"><span class="tag">Integrated OOH &amp; Digital Planning</span><span class="tag">Occasion &amp; Location Targeting</span><span class="tag">Telco Data</span></div>
+      <div class="case-q">Core question: <b>How do you shift a deeply-held habit — street-hailing — and win consideration for booking through the app?</b></div>
+      <div class="tags"><span class="tag">Consumer Insight</span><span class="tag">Audience Segmentation</span><span class="tag">Brand Lift</span><span class="tag">Occasion Targeting</span></div>
       <div class="star">
-        <div class="star-row no-top">
-          <div class="star-k">S</div>
-          <div class="star-b"><div class="lbl">Situation</div><p>Client's business objective was to <b>lift product consideration</b> while expanding reach and shifting Taiwanese consumers' habit of hailing taxis on the street.</p></div>
-        </div>
-        <div class="star-row no-top">
-          <div class="star-k">T</div>
-          <div class="star-b"><div class="lbl">Task</div><p>Balance reach while increasing frequency, and <b>target right people at the right time</b>.</p></div>
-        </div>
-        <div class="star-row star-full">
-          <div class="star-k">A</div>
-          <div class="star-b"><div class="lbl">Action</div><ol><li>Balanced reach and video-view buying, and used <b>telco data</b> (invoice records, browsing history, etc.) to target relevant audiences.</li><li>Targeted <b>ride-hailing occasions and hotspots</b>, using OOH to reach consumers at the exact occasion and location of product use.</li></ol></div>
-        </div>
-        <div class="star-row star-full">
-          <div class="star-k">R</div>
-          <div class="star-b"><div class="lbl">Result</div><div class="res-lead"><div class="rl-nums"><div class="rl-n"><span class="v">+1.1<i>pts</i></span><span class="l">Consideration lift</span></div><div class="rl-n"><span class="v">~+8<i>pts</i></span><span class="l">Ad awareness lift</span></div></div><div class="rl-src">Brand Lift Survey (BLS)</div></div><ul class="res"><li>Growth in <b>first-time Uber Taxi rides</b> and quarter-on-quarter brand familiarity</li><li>Drove an increased <b>share of online ride-hailing trips</b></li><li>Campaign generated over <b>NT$200M in earned media value</b></li><li><b>3M+ total ad clicks</b> across the campaign</li></ul></div>
-        </div></div>
+        <div class="star-row no-top"><div class="star-k">S</div>
+          <div class="star-b"><div class="lbl">Business challenge</div><p>How could Uber Taxi shift consumers away from the habit of street-hailing and <b>increase consideration</b> for booking a taxi through the app?</p></div></div>
+        <div class="star-row no-top"><div class="star-k">T</div>
+          <div class="star-b"><div class="lbl">Audience insight</div><p>Consideration is won at the <b>moment of need</b>. We focused on the specific occasions and locations where people decide how to get a ride.</p></div></div>
+        <div class="star-row star-full"><div class="star-k">A</div>
+          <div class="star-b"><div class="lbl">Strategic approach</div><ol><li>Segmented audiences using <b>telco signals</b> (billing and browsing behaviour) to reach people with genuine ride-hailing intent.</li><li>Balanced reach against video-view depth so the message built both awareness and consideration, not just impressions.</li><li>Placed OOH at <b>ride-hailing hotspots</b> to meet consumers at the exact occasion of use.</li></ol></div></div>
+        <div class="star-row star-full"><div class="star-k">R</div>
+          <div class="star-b"><div class="lbl">Measurement &amp; result</div><div class="res-lead"><div class="rl-nums"><div class="rl-n"><span class="v">+1.1<i>pts</i></span><span class="l">Consideration lift</span></div><div class="rl-n"><span class="v">~+8<i>pts</i></span><span class="l">Ad awareness lift</span></div></div><div class="rl-src">Measured via Brand Lift Study</div></div><ul class="res"><li>Growth in <b>first-time Uber Taxi rides</b> and quarter-on-quarter brand familiarity</li><li>Increased <b>share of online ride-hailing trips</b></li><li>Over <b>NT$200M in earned media value</b></li></ul></div></div></div>
       
       <div class="gal reveal">
         <figure><img src="02-ooh-ximen.jpg" alt="OOH takeover in Ximen" loading="lazy" decoding="async" width="1100" height="649"><figcaption>OOH takeover in Ximen</figcaption></figure>
-        <figure><img src="03-ooh-latenight.jpg" alt="Late night social OOH" loading="lazy" decoding="async" width="1100" height="619"><figcaption>Late night social OOH</figcaption></figure>
-        <figure><img src="04-team.jpg" alt="Team work" loading="lazy" decoding="async" width="1100" height="734"><figcaption>Team work</figcaption></figure>
+        <figure><img src="03-ooh-latenight.jpg" alt="Late night social OOH" loading="lazy" decoding="async" width="1100" height="619"><figcaption>Late-night social OOH</figcaption></figure>
+        <figure><img src="04-team.jpg" alt="Team work" loading="lazy" decoding="async" width="1100" height="734"><figcaption>Campaign team</figcaption></figure>
       </div>
     </article>
 
     <article class="case reveal">
-      <div class="case-hd">
-        <span class="case-num">02</span>
-        <div><h3>Skip the Drama: Taxi is on Uber at Dadaocheng Summer Festival</h3><div class="sub">Event-led media activation · Rapid-turnaround execution</div></div>
+      <div class="case-hd"><span class="case-num">02</span>
+        <div><h3>Real-Time Brand Activation &amp; Earned Conversation</h3><div class="sub">Dadaocheng Summer Festival · event-led media activation</div></div>
       </div>
-      <div class="tags"><span class="tag">Media Planning</span><span class="tag">Event-led Media Activation</span><span class="tag">Rapid-turnaround Execution</span></div>
+      <div class="case-q">Core question: <b>How do you extend a short surprise event into immediate brand conversation after it ends?</b></div>
+      <div class="tags"><span class="tag">Event Activation</span><span class="tag">Earned Media</span><span class="tag">Partner Coordination</span><span class="tag">Real-Time Execution</span></div>
       <div class="star">
-        <div class="star-row star-full no-top">
-          <div class="star-k">S</div>
-          <div class="star-b"><div class="lbl">Situation</div><p>The goal was to <b>create hype</b> after a surprise event at the Dadaocheng Summer Festival.</p></div>
-        </div>
-        <div class="star-row star-full">
-          <div class="star-k">T</div>
-          <div class="star-b"><div class="lbl">Task</div><ol><li>Plan advertorials to increase social exposure, and reach as broad a demographic as possible.</li><li>Ensure all media outlets could post articles, reels, and stories <b>within 30 minutes</b> of the event, to ride the post-event hype.</li></ol></div>
-        </div>
-        <div class="star-row star-full">
-          <div class="star-k">A</div>
-          <div class="star-b"><div class="lbl">Action</div><div class="act-grp"><div class="act-h">1. Maximize reach</div><ul class="act-l"><li>Planned media outlets spanning both breadth and depth across content categories — news for mature age groups, social for younger age groups, female-led content advertorials, and more.</li></ul></div><div class="act-grp"><div class="act-h">2. Fast turnaround execution time</div><ul class="act-l"><li>Set up an <b>on-site editing area</b> so media outlets could produce video content immediately after the event.</li><li>Prepared advertorials <b>before the event</b>, so media could schedule launch times in advance.</li></ul></div></div>
-        </div>
-        <div class="star-row star-full">
-          <div class="star-k">R</div>
-          <div class="star-b"><div class="lbl">Result</div><div class="res-lead"><div class="rl-nums"><div class="rl-n"><span class="v">2.98<i>M+</i></span><span class="l">Valid ad impressions</span></div><div class="rl-n"><span class="v">1.9<i>M+</i></span><span class="l">People reached</span></div></div></div></div>
-        </div></div>
+        <div class="star-row star-full no-top"><div class="star-k">S</div>
+          <div class="star-b"><div class="lbl">Situation</div><p>A short, surprise Uber activation at the Dadaocheng Summer Festival. The challenge: extend a brief live moment into <b>immediate social conversation</b> once the event ended.</p></div></div>
+        <div class="star-row star-full"><div class="star-k">T</div>
+          <div class="star-b"><div class="lbl">My scope</div><p>Media activation, media coordination, content timing, and post-event amplification — <b>not</b> production of the event itself.</p></div></div>
+        <div class="star-row star-full"><div class="star-k">A</div>
+          <div class="star-b"><div class="lbl">Media &amp; content strategy</div><div class="act-grp"><div class="act-h">Maximise earned reach</div><ul class="act-l"><li>Coordinated a mix of media partners across categories — news, social, and female-oriented content — to widen the demographic footprint.</li></ul></div><div class="act-grp"><div class="act-h">Real-time execution</div><ul class="act-l"><li>Prepared advertorial materials <b>in advance</b> so partners could schedule launch windows.</li><li>Set up an <b>on-site editing area</b> so partners could publish articles, Reels, and Stories within <b>30 minutes</b> of the event.</li></ul></div></div></div>
+        <div class="star-row star-full"><div class="star-k">R</div>
+          <div class="star-b"><div class="lbl">Result</div><div class="res-lead"><div class="rl-nums"><div class="rl-n"><span class="v">2.98<i>M+</i></span><span class="l">Valid ad impressions</span></div><div class="rl-n"><span class="v">1.9<i>M+</i></span><span class="l">People reached</span></div></div></div></div></div></div>
+      <div class="role-note"><b>My role:</b> media activation, partner coordination, content timing, and post-event amplification. I did not produce the event itself.</div>
       
       <div class="gal gal-c2 reveal">
-        <figure class="c2-main"><img src="05-dadaocheng.jpg" alt="Dadaocheng Summer Festival surprise event" loading="lazy" decoding="async" width="1100" height="734"><figcaption>Dadaocheng Summer Festival surprise event</figcaption></figure>
-        <figure class="c2-press"><img src="06-press-udn.jpg" alt="Press coverage of the event" loading="lazy" decoding="async" width="1000" height="885"><figcaption>Press coverage</figcaption></figure>
-        <figure class="c2-social"><img src="07-press-social.jpg" alt="Social media coverage of the event" loading="lazy" decoding="async" width="375" height="700"><figcaption>Social coverage</figcaption></figure>
+        <figure><img src="05-dadaocheng.jpg" alt="Dadaocheng Summer Festival activation" loading="lazy" decoding="async" width="1100" height="734"><figcaption>Dadaocheng Summer Festival activation</figcaption></figure>
+        <figure><img src="06-press-udn.jpg" alt="Press coverage" loading="lazy" decoding="async" width="1000" height="885"><figcaption>Press coverage</figcaption></figure>
+        <figure><img src="07-press-social.jpg" alt="Social coverage" loading="lazy" decoding="async" width="375" height="700"><figcaption>Social coverage</figcaption></figure>
       </div>
     </article>
 
+    <div style="margin-top:10px">
+      <div class="sec-head reveal" style="margin-bottom:26px">
+        <span class="sec-tag"><span class="pill">Recognition</span> Award-Winning Campaign</span>
+        <h2 style="font-size:1.7rem">Taxi is on Uber × Powerstation</h2>
+      </div>
+      <div class="aw-grid">
+        <div class="aw-cards">
+          <div class="aw reveal"><div class="aw-medal"><svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 8.5L6 2h12l-2.5 6.5"/></svg><span class="aw-x">3×</span></div><div class="aw-b"><h4>Gold Effies</h4><p>Effie Awards Taiwan</p></div></div>
+          <div class="aw reveal"><div class="aw-medal"><svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 8.5L6 2h12l-2.5 6.5"/></svg></div><div class="aw-b"><h4>Grand Prix</h4><p>YouTube Works Awards Taiwan</p></div></div>
+          <div class="aw reveal"><div class="aw-medal"><svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 8.5L6 2h12l-2.5 6.5"/></svg></div><div class="aw-b"><h4>Outstanding Brand Content Marketing Award</h4><p>Brain Awards</p></div></div>
+        </div>
+        <div class="aw-role reveal">
+          <div class="lbl">My Role</div>
+          <h4>Campaign Execution</h4>
+          <p>Across the full campaign lifecycle:</p>
+          <ul class="act-l"><li><b>Pre-campaign</b> — preparation and setup</li><li><b>Mid-campaign</b> — optimization and monitoring</li><li><b>Post-campaign</b> — analysis and presentation</li></ul>
+        </div>
+      </div>
+      <div class="gal gal-aw reveal">
+        <figure><img src="08-award-trophies.jpg" alt="Team with award trophies" loading="lazy" decoding="async" width="1100" height="804"><figcaption>The team with the trophies</figcaption></figure>
+        <figure><img src="09-award-ceremony.jpg" alt="Brain Awards ceremony" loading="lazy" decoding="async" width="1100" height="619"><figcaption>Brain Awards ceremony</figcaption></figure>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="sec" id="awards">
+<section class="sec" id="community">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="sec-tag">Award-Winning Campaign</span>
-      <h2>Taxi is on Uber × Powerstation</h2>
-      <p>Recognized across Taiwan's major advertising and content awards.</p>
+      <span class="sec-tag">Community &amp; Owned Media</span>
+      <h2>Building an audience, not just reaching one</h2>
+      <p>A personal project run alongside my career — content planning and community for an international-artist fan community.</p>
     </div>
-
-    <div class="aw-grid">
-      <div class="aw-cards">
-        <div class="aw reveal">
-          <div class="aw-medal">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 8.5L6 2h12l-2.5 6.5"/></svg>
-            <span class="aw-x">3×</span>
-          </div>
-          <div class="aw-b"><h4>Gold Effies</h4><p>Effie Awards Taiwan</p></div>
-        </div>
-        <div class="aw reveal">
-          <div class="aw-medal">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 8.5L6 2h12l-2.5 6.5"/></svg>
-          </div>
-          <div class="aw-b"><h4>Grand Prix</h4><p>YouTube Works Awards Taiwan</p></div>
-        </div>
-        <div class="aw reveal">
-          <div class="aw-medal">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 8.5L6 2h12l-2.5 6.5"/></svg>
-          </div>
-          <div class="aw-b"><h4>Outstanding Brand Content Marketing Award</h4><p>Brain Awards</p></div>
-        </div>
-      </div>
-
-      <div class="aw-role reveal">
-        <div class="lbl">My Role</div>
-        <h4>Campaign Execution</h4>
-        <p>Spanning the full campaign lifecycle:</p>
-        <ul class="act-l">
-          <li><b>Pre-campaign</b> — preparation and setup</li>
-          <li><b>Mid-campaign</b> — optimization and monitoring</li>
-          <li><b>Post-campaign</b> — analysis and presentation</li>
+    <div class="comm-grid">
+      <div class="comm-card reveal">
+        <h3>Fan community content &amp; engagement</h3>
+        <div class="obj">Objective: community connection — helping fans meet like-minded people, not commercial conversion.</div>
+        <ul>
+          <li>Planned content, a <b>publishing calendar</b>, and community engagement</li>
+          <li>Curated, translated, and fact-checked international entertainment content</li>
+          <li>Wrote social copy and adjusted direction based on <b>engagement data</b></li>
+          <li>Independently organised a small <b>offline gathering</b> — venue, agenda, promotion, attendee communication, and on-site engagement</li>
         </ul>
       </div>
-    </div>
-
-    <div class="gal gal-aw reveal">
-      <figure><img src="08-award-trophies.jpg" alt="Team with award trophies" loading="lazy" decoding="async" width="1100" height="804"><figcaption>Team with the trophies</figcaption></figure>
-      <figure><img src="09-award-ceremony.jpg" alt="Brain Awards ceremony" loading="lazy" decoding="async" width="1100" height="619"><figcaption>Brain Awards ceremony</figcaption></figure>
+      <div class="comm-stats">
+        <div class="comm-stat reveal"><div class="v">35,000+</div><div class="l">Reach on a single post</div></div>
+        <div class="comm-stat reveal"><div class="v">92,000</div><div class="l">Total reach</div></div>
+        <div class="comm-stat reveal"><div class="v">Bilingual</div><div class="l">Content in English &amp; Mandarin</div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec" id="about">
+<section class="sec" id="experience" style="background:var(--bg-soft)">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="sec-tag">About Me</span>
-      <h2>A media planner who bridges business objectives, media strategy, and media execution to deliver measurable marketing outcomes.</h2>
+      <span class="sec-tag">Experience</span>
+      <h2>Career snapshot</h2>
     </div>
-    <div class="about-grid">
-      <div class="about-card reveal">
-        <p>I'm a <strong>Senior Executive at WPP Media</strong>, working on the Uber Mobility account since July 2024. I specialize in media planning and execution for integrated media plans across offline and digital platforms.</p>
-        <p>My work spans the full campaign lifecycle — from media mix recommendations and budget forecasting to live optimization and performance reporting. I partner closely with <strong>APAC regional teams across Australia, Hong Kong, and India</strong> to align objectives, execution plans, and business priorities.</p>
-        <p>I have led performance meetings with clients, translating campaign data into media recommendations, and manage relationships across creative, ad operators, media buying, and external vendors to keep delivery seamless.</p>
+    <div class="exp-list">
+      <div class="exp reveal">
+        <div class="when">Jul 2024 — Present<span class="org">WPP Media Taiwan</span><span class="role">Senior Executive</span></div>
+        <div class="exp-b"><ul>
+          <li>Lead integrated campaign planning for <b>Uber Mobility Taiwan</b> — awareness &amp; consideration</li>
+          <li>Media mix, budget allocation, audience segmentation, frequency planning</li>
+          <li><b>Brand Lift Study</b>, ad recall, VTR and consideration measurement; monthly market &amp; competitor analysis</li>
+          <li>Cross-regional work with Australia, Hong Kong &amp; India; built SOPs and guided new team members</li>
+          <li>Promoted from intern to Senior Executive in six months</li>
+        </ul></div>
       </div>
-      <div class="info-list">
-        <div class="info-item reveal"><div class="k">Role</div><div class="v">Senior Executive</div><div class="s">WPP Media · Client: Uber Mobility</div></div>
-        <div class="info-item reveal"><div class="k">Education</div><div class="v">Fu Jen Catholic University</div><div class="s">B.A. English Language &amp; Literature · Minor in Advertising &amp; PR</div></div>
-        <div class="info-item reveal"><div class="k">Language</div><div class="v">English · Mandarin</div><div class="s">TOEIC 985</div></div>
+      <div class="exp reveal">
+        <div class="when">Aug 2023 — Jun 2024<span class="org">ICRT</span><span class="role">Project Specialist</span></div>
+        <div class="exp-b"><ul>
+          <li>Wrote marketing proposals and presentations; joined pitches for <b>CTBC Bank, Volkswagen, STARLUX</b> and government clients</li>
+          <li>Led the Ministry of Education K–12 “Interactive English Radio Learning Program” — timelines, events, reporting, closure</li>
+          <li>Grew English-speaking submissions to <b>110+</b> in one semester at <b>80%+</b> satisfaction</li>
+        </ul></div>
+      </div>
+      <div class="exp reveal">
+        <div class="when">Education<span class="org">Fu Jen Catholic University</span><span class="role">B.A. English Language &amp; Literature</span></div>
+        <div class="exp-b"><ul>
+          <li>Minor in Advertising &amp; Communication</li>
+          <li>TOEIC 985 · fluent English &amp; Mandarin</li>
+        </ul></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec sec-last" id="skills" style="background:var(--bg-soft)">
+<section class="sec sec-last" id="skills">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="sec-tag">Capabilities</span>
       <h2>What I bring to the table</h2>
     </div>
-    <div class="skills-wrap">
-      <div class="sk-grp reveal"><div class="sk-lbl">Media Planning</div><div class="sk-tags"><span class="skill">Budget Allocation &amp; Forecasting</span><span class="skill">Digital and Offline Planning</span><span class="skill">Presentation</span></div></div>
-      <div class="sk-grp reveal"><div class="sk-lbl">Communication</div><div class="sk-tags"><span class="skill">Cross-function and APAC Regional Collaboration</span></div></div>
-      <div class="sk-grp reveal"><div class="sk-lbl">Tools</div><div class="sk-tags"><span class="skill">Google Ads</span><span class="skill">Meta</span><span class="skill">TikTok</span><span class="skill">Brand Lift Survey (BLS) Analysis</span></div></div>
+    <div class="skills-wrap"><div class="sk-grp reveal"><div class="sk-lbl">Strategy & Planning</div><div class="sk-tags"><span class="skill">Integrated Campaign Strategy</span><span class="skill">Consumer &amp; Audience Insight</span><span class="skill">Campaign Objective Planning</span><span class="skill">Frequency &amp; Reach Planning</span></div></div><div class="sk-grp reveal"><div class="sk-lbl">Brand & Measurement</div><div class="sk-tags"><span class="skill">Brand Lift Study</span><span class="skill">Ad Recall</span><span class="skill">VTR</span><span class="skill">Consideration Measurement</span><span class="skill">Market &amp; Competitor Analysis</span></div></div><div class="sk-grp reveal"><div class="sk-lbl">Collaboration</div><div class="sk-tags"><span class="skill">APAC Regional Collaboration</span><span class="skill">Stakeholder Management</span><span class="skill">Project Coordination</span><span class="skill">Client Service</span></div></div><div class="sk-grp reveal"><div class="sk-lbl">Activation & Tools</div><div class="sk-tags"><span class="skill">Event Activation</span><span class="skill">Campaign Optimization</span><span class="skill">Google Ads / Meta / TikTok</span><span class="skill">The Trade Desk</span></div></div>
     </div>
   </div>
 </section>
 
-<footer><div class="wrap">© 2026 Michelle Fan 范玫宣 · Senior Executive, WPP Media</div></footer>
+<footer><div class="wrap">© 2026 Michelle Fan 范玫宣 · Integrated Campaign &amp; Regional Marketing</div></footer>
 
 <script>
   const toggle=document.getElementById('navToggle'),links=document.getElementById('navlinks');
